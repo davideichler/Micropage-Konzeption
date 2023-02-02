@@ -127,3 +127,8 @@ h2 {
     display: table;
     clear: both;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
