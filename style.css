@@ -3,6 +3,10 @@
     src: url(OCRAEXT.TTF);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 div {
     font-family: myFirstFont;
 }
@@ -12,29 +16,142 @@ body {
 
 }
 
-#logo {
-    display: inline-block;
-    width: 796.5px;
-    height: 120.375px;
+
+.header {
+    padding: 10px 16px;
+    text-align: center;
+    height: 100vh;
+}
+
+
+#linachGif {
+    height: 50%;
+    width: 50%;
+    margin-top: 50px;
+    transition: 0.5s all ease-in-out;
+
+    /* animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;  */
+}
+
+#linachGif:hover {
+    transform: scale(1.2)
+}
+.logoContainer {
+
+}
+
+#about {
     margin-left: auto;
-    margin-right: auto;
+}
+
+
+
+#textSection {
+    margin-left: auto;
+    padding: 30vh;
+}
+
+#videoSection {
     
 }
+
+#logo {
+    width: 796.5px;
+    height: 120.375px;
+    padding: 10px; 
+    background-attachment: fixed;
+      
+}
+
+
+
+#linachPng:hover {
+    opacity: 0%;
+}
+/* #linachGif:hover {
+    animation-name: jittery;
+} */
 
 #gifHeader {
     display: inline-block;
     width: 351px;
     height: 171px;
-
 }
 
-.header {
-    padding: 10px 16px;
+#kapelleContainer {
     text-align: center;
+   
+}
+
+
+
+#kapelleGif {
+    display: inline-block;
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+#bregGif {
+    display: inline-block;
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+#kapelleGif:hover {
+    animation-name: jittery;
+}
+
+#bregGif:hover {
+    animation-name: jittery;
+}
+ 
+@keyframes jittery {
+    10% {
+        transform: translate(-2px, -3px) scale(1.01, 1.01);
+    }
+    20% {
+        transform: translate(3px, 2px) scale(.99, .99);
+    }
+    30% {
+        transform: translate(-4px, -5px) scale(1.01, 1.01);
+    }
+    40% {
+        transform: translate(2px, 3px) scale(1, 1);
+    }
+    50% {
+        transform: translate(-1px, -2px) scale(.98, .98);
+    }
+    60% {
+        transform: translate(0px, 3px) scale(1.02, 1.02);
+    }
+    70% {
+        transform: translate(-2px, -4px) scale(1, 1);
+    }
+    80% {
+        transform: translate(3px, 5px) scale(.99, .99);
+    }
+    90% {
+        transform: translate(-5px, -3px) scale(1.1, 1.1);
+    }
+    100% {
+        transform: translate(3px, 1px) scale(.95, .95);
+    }
+}
+
+#eisGif {
+    display: inline-block;
 }
 
 .content {
     padding: 16px;
+    height: 100vh;
 }
 
 .sticky {
@@ -65,16 +182,25 @@ body {
 p {
     color: white;
     opacity: 80%;
+    text-align: center;
 }
 
 h2 {
     color:white;
 }
 
+h1 {
+    color: white;
+    text-align: center;
+}
+
 .mainContent {
     display: block;
     width: 100%;
     height: auto;
+    text-align: center;
+}
+.navigation {
     text-align: center;
 }
 
@@ -100,7 +226,7 @@ h2 {
     width: 31%;
 }
 
-.linkRow {
+/* .linkRow {
     display: block;
     width: 100%;
     height: auto;
@@ -108,8 +234,7 @@ h2 {
     margin-right: auto;
     min-width: 44%;
     text-align: center;
-    
-}
+} */
 
 .gifDiv {
     margin: auto;
@@ -122,13 +247,21 @@ h2 {
     width: auto;
 }
 
-.linkRow::after {
+/* .linkRow::after {
     content: "";
     display: table;
     clear: both;
-}
+} */
 
 a {
     color: white;
     text-decoration: none;
+}
+
+.linkRow {
+    text-align: center;
+}
+
+.noHover:hover{
+    cursor: default;
 }
