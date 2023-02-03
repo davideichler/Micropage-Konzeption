@@ -55,7 +55,7 @@ body {
 }
 
 #videoSection {
-    
+    height: auto;
 }
 
 #logo {
@@ -151,7 +151,7 @@ body {
 
 .content {
     padding: 16px;
-    height: 100vh;
+    height: 80vh;
 }
 
 .sticky {
