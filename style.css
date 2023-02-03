@@ -265,3 +265,12 @@ a {
 .noHover:hover{
     cursor: default;
 }
+
+.coverContainer {
+    max-height: 150px;
+    text-align: center;
+}
+
+#cover {
+    height: auto;
+}
